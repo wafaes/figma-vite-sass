@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Paleta colores */
+  /* Las variables de color no tienen un equivalente en CSS puro */
+  
+  /* Tipografías */
+  /* La variable $font-family estaba comentada */
+  
+  /* Estilos con valores reemplazados */
+  body{
+    background-color: black;
+    color: #FFFFFF;
+  }
+  .menu {
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 10%;
+  }
+  
+  .hero {
+    /* No se especificaron estilos */
+  }
+  
+  .title {
+    font-size: 100px;
+    font-weight: 400;
+  }
+  
+  .date {
+    font-size: 24px;
+    font-weight: 800;
+  }
+  
+  .city {
+    font-size: 24px;
+    font-weight: 400;
+  }
+  
+  .enclosure {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  
+  .footer {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  
+  .icon-size {
+    width: 4px;
+    height: 4px;
+  }
+  

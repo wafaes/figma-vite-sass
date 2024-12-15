@@ -1,0 +1,190 @@
+@use 'variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-family;
+}
+
+body {
+  background-color: $color-black;
+  color: $color-white;
+}
+
+.menu {
+  color: $color-white;
+  font-size: $font-size-base;
+  font-weight: 400;
+  letter-spacing: 10%;
+  display: flex;
+  gap: $gap-large;
+  justify-content: flex-end;
+  align-items: center;
+  height: 70px;
+  margin-right: $margin-large;
+
+  a {
+    text-decoration: none;
+    color: $color-white;
+
+    &:hover {
+      color: $color-grey;
+    }
+  }
+}
+
+.hero {
+  display: block;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.title {
+  font-size: $font-size-large;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+}
+
+.concert1, .concert2 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: $margin-large;
+
+  img {
+    width: 80%;
+
+    &.concert2 {
+      width: 35%;
+      height: 70%;
+    }
+  }
+}
+
+.date {
+  font-size: $font-size-base;
+  font-weight: 800;
+}
+
+.city {
+  font-size: $font-size-base;
+  font-weight: 400;
+}
+
+.enclosure {
+  font-size: $font-size-small;
+  font-weight: 400;
+}
+
+.footer {
+  font-size: $font-size-base;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: $margin-large 0;
+
+  .footertxt {
+    display: flex;
+    justify-content: center;
+  }
+
+  .icons {
+    .icon-size {
+      width: $icon-size;
+      height: $icon-size;
+    }
+  }
+}
+
+.inputtxt {
+  border-bottom: $border-width solid $color-white;
+  background: none;
+  height: 25px;
+  width: 350px;
+  font-size: 18px;
+  margin: $padding-small;
+
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.764);
+    font-weight: 100;
+    font-size: $font-size-small;
+  }
+}
+
+.btn {
+  margin-top: $margin-large;
+  border: $border-width-thick solid $color-grey;
+  background-color: transparent;
+  color: $color-grey;
+  font-size: $font-size-base;
+  padding: $padding-small;
+  height: 45px;
+  width: 120px;
+  text-align: center;
+}
+
+select {
+  background-color: $color-black;
+  color: $color-white;
+  font-size: 18px;
+  font-weight: 100;
+  width: 200px;
+
+  option {
+    background-color: $color-black;
+    color: $color-white;
+  }
+}
+
+.mainlist {
+  background-image: url('../assets/img/duros3.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+  color: $color-white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+
+// Media Queries
+@media screen and (max-width: 768px) {
+  .menu {
+    font-size: 15px;
+    height: 30px;
+    justify-content: center;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .concert1, .concert2 {
+    display: inline;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 75%;
+      height: auto;
+    }
+  }
+
+  .footer {
+    font-size: 17px;
+    display: inline;
+    align-items: center;
+  }
+}
