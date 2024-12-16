@@ -4,13 +4,7 @@
     box-sizing: border-box;
   }
   
-  /* Paleta colores */
-  /* Las variables de color no tienen un equivalente en CSS puro */
-  
-  /* Tipografías */
-  /* La variable $font-family estaba comentada */
-  
-  /* Estilos con valores reemplazados */
+
   body{
     background-color: black;
     color: #FFFFFF;
@@ -21,9 +15,7 @@
     letter-spacing: 10%;
   }
   
-  .hero {
-    /* No se especificaron estilos */
-  }
+  
   
   .title {
     font-size: 100px;
